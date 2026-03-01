@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Progressions
+GenericName=System Maintenance
+Comment=Arch Linux System Maintenance — update packages, clean caches, rebuild initramfs and more
+Exec=progressions
+Icon=system-software-update
+Categories=System;PackageManager;
+Keywords=update;upgrade;maintenance;pacman;yay;arch;linux;
+StartupNotify=true
+StartupWMClass=progressions
