@@ -40,7 +40,7 @@ private:
         // ── Header bar ────────────────────────────────────────────────────────
         auto hb = Gtk::make_managed<Gtk::HeaderBar>();
         hb->set_show_title_buttons(true);
-
+        set_titlebar(*hb);
         // App icon + title widget
         auto title_box = Gtk::make_managed<Gtk::Box>(Gtk::Orientation::HORIZONTAL, 8);
         auto app_icon  = Gtk::make_managed<Gtk::Image>();
@@ -154,7 +154,7 @@ private:
         root->append(*commands_box_);
 
         // ── Footer ────────────────────────────────────────────────────────────
-        auto footer = Gtk::make_managed<Gtk::Label>("Progressions — Arch Linux System Updater");
+        auto footer = Gtk::make_managed<Gtk::Label>("Progressions — System updater/maintenance tool");
         footer->add_css_class("caption");
         footer->set_halign(Gtk::Align::CENTER);
         footer->set_margin_top(8);
