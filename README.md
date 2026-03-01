@@ -10,6 +10,7 @@ flatpak upgrade
 and other system refreshal commands, such as dns flushing, cache clearing, etc...
 but you can change those in settings to fit your distribution better
 
+## makefile commands:
 ### to compile, run:
 `make`
 
