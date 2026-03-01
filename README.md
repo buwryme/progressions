@@ -10,17 +10,17 @@ flatpak upgrade
 and other system refreshal commands, such as dns flushing, cache clearing, etc...
 but you can change those in settings to fit your distribution better
 
-# to compile, run:
+### to compile, run:
 `make`
 
-# to clean artifacts:
+### to clean artifacts:
 `make clean`
 
-# to run the compiled binary:
+### to run the compiled binary:
 `./progressions`
 
-# to install progressions:
+### to install progressions:
 `sudo make install`
 
-# to uninstall progressions:
+### to uninstall progressions:
 `sudo make uninstall`
