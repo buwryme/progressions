@@ -129,7 +129,7 @@ public:
             }
 
             // ── Enable/disable child widgets when switch toggled ───────────────
-            sw->property_active().signal_changed().connect([row, cmd_preview, sw]() {
+            sw->property_active().signal_changed().connect([cmd_preview, sw]() {
                 bool active = sw->get_active();
                 cmd_preview->set_sensitive(active);
             });

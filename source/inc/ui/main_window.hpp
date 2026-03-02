@@ -154,7 +154,8 @@ private:
         root->append(*commands_box_);
 
         // ── Footer ────────────────────────────────────────────────────────────
-        auto footer = Gtk::make_managed<Gtk::Label>("Progressions — System updater/maintenance tool");
+        auto footer = Gtk::make_managed<Gtk::Label>();
+        footer->set_markup("<b>Made with love by buwryme</b>");
         footer->add_css_class("caption");
         footer->set_halign(Gtk::Align::CENTER);
         footer->set_margin_top(8);

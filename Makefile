@@ -9,7 +9,7 @@ BUILD_DIR := build
 SOURCE_DIR := source
 
 # Packages - GTKmm 4 is heavy, perfect for a PCH
-PKGS     := gtkmm-4.0 libadwaita-1
+PKGS     := gtkmm-4.0 libnotify
 CXXFLAGS := -std=c++23 -O2 -Wall -Wextra -Wno-unused-parameter \
             $(shell pkg-config --cflags $(PKGS)) -I$(SOURCE_DIR)/inc
 LDFLAGS  := $(shell pkg-config --libs $(PKGS))
